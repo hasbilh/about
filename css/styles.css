@@ -336,7 +336,33 @@ label {
 }
 
 button {
-  border-radius: 0;
+  display: inline-block;
+  outline: none;
+  border-width: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: 500;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  background: rgb(0, 70, 100);
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 12px;
+  vertical-align: middle;
+  width: auto;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+ }
+
+ button:hover {
+  background: rgb(0, 101, 255);
+  text-decoration: inherit;
+  transition-duration: 0s, 0.15s;
+  color: rgb(255, 255, 255);
 }
 
 button:focus:not(:focus-visible) {
